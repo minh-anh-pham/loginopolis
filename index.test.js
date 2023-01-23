@@ -9,7 +9,7 @@ describe('Endpoints', () => {
     const testUserData = { username: 'bobbysmiles', password: 'youllneverguess' };
     let registerResponse;
     let loginResponse;
-    
+
     beforeAll(async () => {
         await sequelize.sync({ force: true }); // recreate db
         await seed();
